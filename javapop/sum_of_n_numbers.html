@@ -1,0 +1,16 @@
+<script>
+function sumOfNumbers() {
+    let n = Number(prompt("Enter how many numbers:"));
+    let sum = 0;
+
+    for (let i = 1; i <= n; i++) {
+        let add = confirm("Do you want to add number " + i + "?");
+        if (add) {
+            let num = Number(prompt("Enter number " + i + ":"));
+            sum += num;
+        }
+    }
+    alert("Sum of numbers: " + sum);
+}
+sumOfNumbers();
+</script>
